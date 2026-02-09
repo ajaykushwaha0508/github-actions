@@ -4,6 +4,6 @@ import Button from "@/components/Button";
 describe("Button", () => {
   it("renders correctly", () => {
     render(<Button label="Click me" />);
-    expect(screen.getByText("Click me")).not.toBeInTheDocument();
+    expect(screen.getByText("Click me")).toBeInTheDocument();
   });
 });
